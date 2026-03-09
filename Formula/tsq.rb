@@ -5,20 +5,20 @@
 class Tsq < Formula
   desc "TaskSquad Daemon"
   homepage "https://tasksquad.ai"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.4/tsq_Darwin_x86_64.tar.gz"
-      sha256 "89373506fd498dbc522598b7f11e1b07fa11db7e43e576188dd2ff60b77551b5"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.2.5/tsq_Darwin_x86_64.tar.gz"
+      sha256 "54dc3dcecdb056a0aa23c904c68fd345c59e43885974cb202491b5d5e7efd2a2"
 
       def install
         bin.install "tsq"
       end
     end
     on_arm do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.4/tsq_Darwin_arm64.tar.gz"
-      sha256 "ce18e34da2e4e9b74f39a92351bbcc98f6d20eaad216fe2aa686001e4760ba3f"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.2.5/tsq_Darwin_arm64.tar.gz"
+      sha256 "55a23ed92440824fba5fa878f3fe257b4e87cb3c7d55aee70f6483ff1f89f8b6"
 
       def install
         bin.install "tsq"
@@ -29,8 +29,8 @@ class Tsq < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.4/tsq_Linux_x86_64.tar.gz"
-        sha256 "b54ca45313ebbc3bd5443b741270608e9c01b9fc92710d86ce195e88aac71b3a"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.2.5/tsq_Linux_x86_64.tar.gz"
+        sha256 "fa7cd5485a6536eb6cb3df8f5b2dc887826609d2435681b28cbecf04fee7922b"
 
         def install
           bin.install "tsq"
@@ -39,8 +39,8 @@ class Tsq < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.4/tsq_Linux_arm64.tar.gz"
-        sha256 "102ee7213d5ce5aac57ed12de3b7aaf335b7d36c5f4c8a7fd1f8518020a9708f"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.2.5/tsq_Linux_arm64.tar.gz"
+        sha256 "1ed427f6e562ad593db15a8ed1a2b3308b0704f96b367f33fec2d867a247fa2a"
 
         def install
           bin.install "tsq"
