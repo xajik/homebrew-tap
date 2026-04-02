@@ -5,20 +5,20 @@
 class Tsq < Formula
   desc "TaskSquad Daemon"
   homepage "https://tasksquad.ai"
-  version "0.2.32"
+  version "0.2.33"
 
   on_macos do
     on_intel do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.32/tsq_Darwin_x86_64.tar.gz"
-      sha256 "5b1f39faf3be8a503eb9d2764c1076dd17e785de694a64c6726096c9c8ac8a4c"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.2.33/tsq_Darwin_x86_64.tar.gz"
+      sha256 "0238c2ead811670ee90c6942264dff7d7a39da33324090532e079a6308ac7383"
 
       def install
         bin.install "tsq"
       end
     end
     on_arm do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.32/tsq_Darwin_arm64.tar.gz"
-      sha256 "ad4034fc8fa467df78c35827bd2c0e011d27b280ac7c3837545954838bd380f5"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.2.33/tsq_Darwin_arm64.tar.gz"
+      sha256 "fe1beb69b7b09b574b57a1636f403112cac893fc8ab1f53c48bc5b6956122a68"
 
       def install
         bin.install "tsq"
@@ -29,8 +29,8 @@ class Tsq < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.32/tsq_Linux_x86_64.tar.gz"
-        sha256 "4447e8959b9d3be6f033126c006eef15118f2cf700383a4a35c3dba3f0ede3ed"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.2.33/tsq_Linux_x86_64.tar.gz"
+        sha256 "22c0921d9b0883859bc626f5c2ef2ed9d59fba497cf5f470e895d9ba8020dbd4"
 
         def install
           bin.install "tsq"
@@ -39,8 +39,8 @@ class Tsq < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.32/tsq_Linux_arm64.tar.gz"
-        sha256 "854da09d7940075799beae0afda23bb5bdfb9180f3d845580541a23524377027"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.2.33/tsq_Linux_arm64.tar.gz"
+        sha256 "cebdbca561cccb460160dfb94cefebb982676fedcf51806dbb37770702101792"
 
         def install
           bin.install "tsq"
