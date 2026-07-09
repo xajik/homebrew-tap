@@ -5,20 +5,20 @@
 class Tsq < Formula
   desc "TaskSquad Daemon"
   homepage "https://tasksquad.ai"
-  version "0.2.50"
+  version "0.0.9"
 
   on_macos do
     on_intel do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.50/tsq_Darwin_x86_64.tar.gz"
-      sha256 "fc1aa0658db09a63de2b5cf48da5d7be0500012d8703997958fb5ad325cae3f3"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.0.9/tsq_Darwin_x86_64.tar.gz"
+      sha256 "2ea689e1f2d44ca8f4e581de34d00abb25616c26cfa3cb4165489588e1aa890f"
 
       def install
         bin.install "tsq"
       end
     end
     on_arm do
-      url "https://github.com/xajik/tasksquad/releases/download/v0.2.50/tsq_Darwin_arm64.tar.gz"
-      sha256 "93b7c78f044db615c37d33534ebaf04c881b6f2c63ae95650fe465513e88c609"
+      url "https://github.com/xajik/tasksquad/releases/download/v0.0.9/tsq_Darwin_arm64.tar.gz"
+      sha256 "28a8893b5a274a9dc162c33b9a1f60ccb6e2e05dee1a8105c8eae294b8e8309a"
 
       def install
         bin.install "tsq"
@@ -29,8 +29,8 @@ class Tsq < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.50/tsq_Linux_x86_64.tar.gz"
-        sha256 "93de11cb70cf47535a39ed1dafc0c52348a04b6e202aff551ca644f2f54b3ff2"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.0.9/tsq_Linux_x86_64.tar.gz"
+        sha256 "c9917f8f47a4cfa1d1f084daf85785a0447416c2409efdb3f113c27f05f4484d"
 
         def install
           bin.install "tsq"
@@ -39,8 +39,8 @@ class Tsq < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/xajik/tasksquad/releases/download/v0.2.50/tsq_Linux_arm64.tar.gz"
-        sha256 "c62e2c8b27161a5ec0e673754bdff319cd372c2413d63bd93a6b4e1791d433a5"
+        url "https://github.com/xajik/tasksquad/releases/download/v0.0.9/tsq_Linux_arm64.tar.gz"
+        sha256 "a0da09772fa4732a332cabd8e2fa3f0d0ed8de25a3b9993f2ecccdcfaa877ff9"
 
         def install
           bin.install "tsq"
